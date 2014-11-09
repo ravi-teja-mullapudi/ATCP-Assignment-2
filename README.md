@@ -1,0 +1,2 @@
+Install OpenCV
+Install Python
