@@ -1,10 +1,10 @@
-Install OpenCV
+Install OpenCV (on Fedora: yum -y install opencv opencv-devel opencv-python)
 
 Install Python, NumPy
 
-icpc -openmp -O3 harris.cpp -L /usr/local/lib/ -lopencv_imgproc -lopencv_core -lopencv_highgui -o harris.out -DANALYZE -DSHOQ -DNRUNS=5
+icpc -openmp -O3 harris.cpp -L /usr/local/lib/ -lopencv_imgproc -lopencv_core -lopencv_highgui -o harris -DANALYZE -DSHOQ -DNRUNS=5
 
-g++ -openmp -O3 harris.cpp -L /usr/local/lib/ -lopencv_imgproc -lopencv_core -lopencv_highgui -o harris.out -DANALYZE -DSHOW -DNRUNS=5
+g++ -openmp -O3 harris.cpp -L /usr/local/lib/ -lopencv_imgproc -lopencv_core -lopencv_highgui -o harris -DANALYZE -DSHOW -DNRUNS=5
 
 ./harris.out path_to_image_file
 
