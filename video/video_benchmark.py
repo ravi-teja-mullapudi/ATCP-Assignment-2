@@ -69,11 +69,11 @@ while(cap.isOpened()):
         cv2.imshow('Video', res)
     else:
         harris_mode = True
-        if frames > 25:
-            # Run first 25 frames in OpenCV mode and the rest 25 in reference mode
-            cv_mode = False
         if frames > 50:
-            # Stop after 50 frames
+            # Run first 50 frames in OpenCV mode and the rest 50 in reference mode
+            cv_mode = False
+        if frames > 100:
+            # Stop after 100 frames
             break
         print "frame interval :  %.1f ms" % (frameEnd*1000 - frameStart*1000)
 
