@@ -21,7 +21,7 @@ Install Python, NumPy (the urls above cover this installation)
 
 Compile the reference implementation in the video folder as a shared library
 
-icpc -xhost -openmp -fPIC -shared -o harris.so harris_ref.cpp
+icpc -xhost -openmp -fPIC -shared -o harris.so harris_extern.cpp
 
 Run the python script as
 
