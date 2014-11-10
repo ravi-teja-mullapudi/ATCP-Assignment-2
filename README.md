@@ -9,7 +9,7 @@ http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_setup/py
 
 One can also install from source using the documentation on the OpenCV website
 
-icpc -openmp -O3 harris.cpp -L /usr/local/lib/ -lopencv_imgproc -lopencv_core -lopencv_highgui -o harris -DANALYZE -DSHOQ -DNRUNS=5
+icpc -xhost -openmp -O3 harris.cpp -L /usr/local/lib/ -lopencv_imgproc -lopencv_core -lopencv_highgui -o harris -DANALYZE -DSHOQ -DNRUNS=5
 
 g++ -openmp -O3 harris.cpp -L /usr/local/lib/ -lopencv_imgproc -lopencv_core -lopencv_highgui -o harris -DANALYZE -DSHOW -DNRUNS=5
 
@@ -22,6 +22,8 @@ Install Python, NumPy (the urls above cover this installation)
 Compile the reference implementation in the video folder as a shared library
 
 icpc -xhost -openmp -fPIC -shared -o harris.so harris_extern.cpp
+
+g++ -openmp -fPIC -shared -o harris.so harris_extern.cpp
 
 Run the python script as
 
