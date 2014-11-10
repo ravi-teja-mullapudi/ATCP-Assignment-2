@@ -26,7 +26,9 @@ icpc -xhost -openmp -fPIC -shared -o harris.so harris_ref.cpp
 Run the python script as
 
 python path_to_video_file 1/0
+
 1 - for displaying the video
+
 0 - for running 25 frames using OpenCV and 25 frames using reference implementation
 
 
