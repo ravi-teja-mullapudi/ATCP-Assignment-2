@@ -33,4 +33,6 @@ python video_benchmark.py path_to_video_file 1/0
 
 0 - for running 25 frames using OpenCV and 25 frames using reference implementation
 
-
+Once the video is running 
+h - toggles harris mode on/off
+space - toggles between reference and opencv implementation

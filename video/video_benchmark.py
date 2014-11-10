@@ -18,6 +18,8 @@ harris = libharris.harris_ref
 fn = sys.argv[1]
 cap = cv2.VideoCapture(fn)
 
+show = int(sys.argv[2])
+
 frames = 0
 cv_mode = True
 harris_mode = False
