@@ -5,6 +5,7 @@ Install OpenCV with QT or gtk
 These two urls should help. 
 
 http://karytech.blogspot.in/2012/05/opencv-24-on-ubuntu-1204.html
+
 http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_setup/py_setup_in_fedora/py_setup_in_fedora.html
 
 One can also install from source using the documentation on the OpenCV website
