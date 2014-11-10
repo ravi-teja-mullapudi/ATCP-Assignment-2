@@ -93,7 +93,7 @@ int main(int argc, char** argv)
                                           1.0f, 1.0f, 1.0f,
                                           1.0f, 1.0f, 1.0f);
 
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < NRUNS; i++) {
 	TIMER__	
         cornerHarris(img_region, opencv_harris, 3, 3, 0.04);
 	__TIMER("OpenCV")
