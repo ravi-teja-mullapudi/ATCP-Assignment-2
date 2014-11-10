@@ -27,7 +27,7 @@ g++ -openmp -fPIC -shared -o harris.so harris_extern.cpp
 
 Run the python script as
 
-python path_to_video_file 1/0
+python video_benchmark.py path_to_video_file 1/0
 
 1 - for displaying the video
 
